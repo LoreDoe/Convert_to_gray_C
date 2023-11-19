@@ -31,7 +31,7 @@ O programa irá exibir um menu de opções. Você pode escolher as seguintes op�
 
 1. Carregar imagem: Esta opção permite que você carregue uma imagem no formato PPM. Digite o caminho do arquivo de imagem quando solicitado. O programa irá carregar a imagem para a memória.
 
-2. Converter para níveis de cinza: Após carregar uma imagem, você pode escolher esta opção para converter a imagem carregada em uma imagem em tons de cinza. O programa realizará a conversão.
+2. Converter para cinza: Após carregar uma imagem, você pode escolher esta opção para converter a imagem carregada em uma imagem em tons de cinza. O programa realizará a conversão.
 
 3. Gravar imagem: Após converter a imagem para tons de cinza, você pode escolher esta opção para salvar a imagem em um novo arquivo PPM. Digite o caminho do arquivo de saída quando solicitado.
 
