@@ -1,6 +1,6 @@
 # Convert_to_gray_C
 
-O Convert_to_gray_C é um programa em C que permite carregar imagens no formato PPM (Portable Pix Map), convertê-las para níveis de cinza e salvá-las novamente no formato PPM.
+O Convert_to_gray_C é um programa em C que permite carregar imagens no formato PPM (Portable Pix Map), convertê-las para cinza e salvá-las novamente no formato PPM.
 
 ## Requisitos
 
