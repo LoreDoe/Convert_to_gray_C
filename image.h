@@ -2,11 +2,12 @@
 #define IMAGE_H
 
 // Define a estrutura Image.
-typedef struct Image {
-    int rows;
-    int cols;
-    char type[3];
-    unsigned char** pixels;
+typedef struct Image 
+{
+    int rows; // Número de linhas da imagem.
+    int cols; // Número de colunas da imagem.
+    char type[3]; // Tipo da imagem.
+    unsigned char** pixels; // Matriz de pixels da imagem.
 } Image;
 
 // Função para criar uma nova imagem.
