@@ -6,6 +6,7 @@ O Convert_to_gray_C é um programa em C que permite carregar imagens no formato 
 
 - Um ambiente de desenvolvimento C (como GCC).
 - Sistema operacional Unix/Linux (o código pode ser adaptado para Windows, se necessário).
+- Poderá também ser utilizado um ambiente online como o Replit.
 
 ## Passo-a-Passo para Executar o Programa
 
