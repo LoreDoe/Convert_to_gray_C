@@ -1,17 +1,39 @@
+# Compiler
 CC = gcc
+
+# Compiler flags
 CFLAGS = -Wall
-LDFLAGS = 
 
-all: image_processor
+# Source files
+SRCS = main.c image.c
 
-image_processor: image.o main.o
-    $(CC) $(CFLAGS) -o image_processor image.o main.o $(LDFLAGS)
+# Object files
+OBJS = $(SRCS:.c=.o)
 
-image.o: image.c image.h
-    $(CC) $(CFLAGS) -c image.c
+# Executable name
+TARGET = image_processing
 
-main.o: main.c image.h
-    $(CC) $(CFLAGS) -c main.c
+# Phony targets
+.PHONY: all compile run clean
 
+# Default target (compile and run)
+all: compile run
+
+# Explicit compile target (produces the target program)
+compile: $(TARGET)
+
+# Run the executable
+run: $(TARGET)
+	./$(TARGET)
+
+# Clean up
 clean:
-    rm -f *.o image_processor
+	rm -f $(OBJS) $(TARGET)
+
+# Compile source files into object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Link object files to create the executable
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
