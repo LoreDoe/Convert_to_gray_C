@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "image.h"
 
-int main() {
+int main() 
+{
     Image* loaded_image = NULL; // Ponteiro para a imagem carregada.
     Image* gray_image = NULL; // Ponteiro para a imagem em tons de cinza.
 
